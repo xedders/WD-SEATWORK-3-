@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header and Footer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <style>
+        .lord-icon {
+            width: 250px;
+            height: 250px;
+        }
+    </style>
 </head>
 <body>
     <header class="main-header">
@@ -29,7 +36,20 @@
             </div>
         </div>
     </header>
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- Lordicon with hover animation -->
+    <lord-icon
+        src="https://cdn.lordicon.com/ubkgpbpt.json"
+        trigger="hover"
+        colors="primary:#ffffff,secondary:#ffffff"
+        style="width:250px;height:250px">
+    </lord-icon>
+
+    <!-- Link to Lordicon.com -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="https://lordicon.com/" target="_blank">Icons by Lordicon.com</a>
+    </div>
+
     <footer>
         <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
