@@ -3,55 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header and Footer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Header Gallery</title>
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <style>
         .lord-icon {
-            width: 250px;
-            height: 250px;
+            width: 100px;
+            height: 100px;
+        }
+        .header-container {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-content">
-            <div class="logo">
-                <span class="cube">cube.</span>
-            </div>
-            <div class="auth-links">
-                <a href="#">Log In</a>
-                <a href="#" class="signup">Sign Up</a>
-            </div>
-        </div>
-        <div class="hero-section">
-            <div class="hero-text">
-                <h1>Header and Footer</h1>
-                <h2>Seatwork 3</h2>
-                <p>Create a Header and Footer Display Website with distinct designs using pure HTML and CSS. Include both static and animated versions of the headers and footers. Ensure the website is well-structured, deployed, and the README file is updated accordingly.</p>
-                <div class="hero-buttons">
-                    <a href="header-gallery/index.html" class="btn-primary">Header Gallery</a>
-                    <a href="footer-gallery/index.html" class="btn-secondary">Footer Gallery</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <h1>Static Headers</h1>
+    <div class="header-container">
+        <header class="classic-header header1">
+            <h1>Static Header 1</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" class="lord-icon"></lord-icon>
+        </header>
+    </div>
+    <div class="header-container">
+        <header class="classic-header header2">
+            <h1>Static Header 2</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" class="lord-icon"></lord-icon>
+        </header>
+    </div>
+    <div class="header-container">
+        <header class="classic-header header3">
+            <h1>Static Header 3</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" class="lord-icon"></lord-icon>
+        </header>
+    </div>
+    <div class="header-container">
+        <header class="classic-header header4">
+            <h1>Static Header 4</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" class="lord-icon"></lord-icon>
+        </header>
+    </div>
+    <div class="header-container">
+        <header class="classic-header header5">
+            <h1>Static Header 5</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" class="lord-icon"></lord-icon>
+        </header>
+    </div>
 
-    <!-- Lordicon with hover animation -->
-    <lord-icon
-        src="https://cdn.lordicon.com/ubkgpbpt.json"
-        trigger="hover"
-        colors="primary:#ffffff,secondary:#ffffff"
-        style="width:250px;height:250px">
-    </lord-icon>
+    <h1>Animated Headers</h1>
+    <div class="header-container">
+        <header class="animated-header header1">
+            <h1>Animated Header 1</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" trigger="hover" class="lord-icon"></lord-icon>
+        </header>
+    </div>
+    <div class="header-container">
+        <header class="animated-header header2">
+            <h1>Animated Header 2</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" trigger="hover" class="lord-icon"></lord-icon>
+        </header>
+    </div>
+    <div class="header-container">
+        <header class="animated-header header3">
+            <h1>Animated Header 3</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" trigger="hover" class="lord-icon"></lord-icon>
+        </header>
+    </div>
+    <div class="header-container">
+        <header class="animated-header header4">
+            <h1>Animated Header 4</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" trigger="hover" class="lord-icon"></lord-icon>
+        </header>
+    </div>
+    <div class="header-container">
+        <header class="animated-header header5">
+            <h1>Animated Header 5</h1>
+            <lord-icon src="https://cdn.lordicon.com/ubkgpbpt.json" trigger="hover" class="lord-icon"></lord-icon>
+        </header>
+    </div>
 
-    <!-- Link to Lordicon.com -->
+    <button onclick="location.href='../index.html'">Back to Home</button>
+
     <div style="text-align: center; margin-top: 20px;">
         <a href="https://lordicon.com/" target="_blank">Icons by Lordicon.com</a>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-    </footer>
 </body>
 </html>
