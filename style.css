@@ -39,12 +39,6 @@ body {
     color: #fff;
 }
 
-.nav-links a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
 .auth-links a {
     color: #fff;
     margin-left: 15px;
@@ -59,9 +53,6 @@ body {
 }
 
 .hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     margin: 50px auto 0;
     padding: 0 20px;
@@ -69,6 +60,8 @@ body {
 
 .hero-text {
     max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-text h1 {
@@ -88,6 +81,7 @@ body {
 
 .hero-buttons {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -107,11 +101,6 @@ body {
     border: 2px solid #fff;
     border-radius: 5px;
     text-decoration: none;
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Decorative Elements */
