@@ -36,3 +36,39 @@ body {
     bottom: 0;
     width: 100%;
 }
+/* Additional Styles for Gallery Pages */
+/* Customize header and footer designs for each gallery page */
+
+/* Static Header Designs */
+.header2 {
+    background-color: #007bff;
+}
+
+.header3 {
+    background-color: #28a745;
+}
+
+.header4 {
+    background-color: #ffc107;
+}
+
+.header5 {
+    background-color: #dc3545;
+}
+
+/* Static Footer Designs */
+.footer2 {
+    background-color: #007bff;
+}
+
+.footer3 {
+    background-color: #28a745;
+}
+
+.footer4 {
+    background-color: #ffc107;
+}
+
+.footer5 {
+    background-color: #dc3545;
+}
