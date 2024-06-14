@@ -4,52 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header and Footer</title>
-    <link rel="stylesheet" href="style.css"> <!-- style.css -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1>Header and Footer</h1>
-        <h2>Seatwork 3</h2>
-        <p>Welcome to our website showcasing unique header and footer designs!</p>
+        <div class="header-container">
+            <h1 class="header-title">Header and Footer</h1>
+            <h2 class="header-subtitle">Seatwork 3</h2>
+            <p class="header-description">Welcome to our website showcasing unique header and footer designs!</p>
+        </div>
     </header>
 
     <main>
-        <!-- Description of your project -->
-        <section>
-            <h2>About</h2>
-            <p>This website showcases various header and footer designs created using HTML and CSS. Explore the galleries to see the different styles we've created!</p>
-        </section>
-
-        <!-- Buttons for navigation -->
-        <section>
-            <h2>Navigation</h2>
-            <div class="buttons">
-                <a href="header-gallery.html" class="button">View Header Gallery</a>
-                <a href="footer-gallery.html" class="button">View Footer Gallery</a>
+        <section class="about-section">
+            <div class="about-container">
+                <h2 class="section-title">About</h2>
+                <p class="section-description">This website showcases various header and footer designs created using HTML and CSS. Explore the galleries to see the different styles we've created!</p>
             </div>
         </section>
 
-        <!-- Static Elements -->
-        <section>
-            <h2>Static Elements</h2>
-            <div class="static-elements">
-                <div class="static-box"></div>
-                <div class="static-circle"></div>
+        <section class="gallery-section">
+            <div class="gallery-container">
+                <h2 class="section-title">Galleries</h2>
+                <div class="gallery-buttons">
+                    <a href="header-gallery.html" class="gallery-button">View Header Gallery</a>
+                    <a href="footer-gallery.html" class="gallery-button">View Footer Gallery</a>
+                </div>
             </div>
         </section>
 
-        <!-- Animated Elements -->
-        <section>
-            <h2>Animated Elements</h2>
-            <div class="animated-elements">
-                <div class="animated-box"></div>
-                <div class="animated-circle"></div>
+        <!-- Additional Design Elements -->
+        <section class="additional-section">
+            <div class="additional-container">
+                <h2 class="section-title">Additional Design Elements</h2>
+                <div class="design-elements">
+                    <div class="element-box"></div>
+                    <div class="element-circle"></div>
+                    <div class="element-image">
+                        <img src="image.jpg" alt="Example Image">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Header and Footer Display</p>
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2024 Header and Footer Display</p>
+        </div>
     </footer>
 </body>
 </html>
