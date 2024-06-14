@@ -76,6 +76,11 @@ body {
     margin-bottom: 20px;
 }
 
+.hero-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .hero-text p {
     font-size: 1.2em;
     margin-bottom: 30px;
