@@ -8,67 +8,59 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+}
+
+/* Common Styles for Headers and Footers */
+header, footer {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
 }
 
 /* Static Header Styles */
 .classic-header {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
 }
 
-.classic-header h1 {
-    font-size: 2.5em;
-}
-
-.classic-header h2 {
-    font-size: 1.5em;
-}
+.header1 { background-color: #007bff; }
+.header2 { background-color: #28a745; }
+.header3 { background-color: #ffc107; }
+.header4 { background-color: #dc3545; }
+.header5 { background-color: #6c757d; }
 
 /* Static Footer Styles */
 .classic-footer {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-/* Additional Styles for Gallery Pages */
-/* Customize header and footer designs for each gallery page */
-
-/* Static Header Designs */
-.header2 {
-    background-color: #007bff;
 }
 
-.header3 {
-    background-color: #28a745;
+.footer1 { background-color: #007bff; }
+.footer2 { background-color: #28a745; }
+.footer3 { background-color: #ffc107; }
+.footer4 { background-color: #dc3545; }
+.footer5 { background-color: #6c757d; }
+
+/* Animation Keyframes */
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
 }
 
-.header4 {
-    background-color: #ffc107;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.header5 {
-    background-color: #dc3545;
+/* Animated Header Styles */
+.animated-header {
+    animation: slideIn 1s ease-in-out;
 }
 
-/* Static Footer Designs */
-.footer2 {
-    background-color: #007bff;
-}
-
-.footer3 {
-    background-color: #28a745;
-}
-
-.footer4 {
-    background-color: #ffc107;
-}
-
-.footer5 {
-    background-color: #dc3545;
+/* Animated Footer Styles */
+.animated-footer {
+    animation: fadeIn 1s ease-in-out;
 }
