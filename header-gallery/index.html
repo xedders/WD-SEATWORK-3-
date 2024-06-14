@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Gallery</title>
-    <link rel="stylesheet" href="..style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <!-- Include Lordicon script -->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <style>
+        .animated-icon {
+            width: 250px;
+            height: 250px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header class="classic-header">
@@ -21,12 +28,24 @@
         <!-- Animated Lordicon -->
         <lord-icon
             src="https://cdn.lordicon.com/ubkgpbpt.json"
-            trigger="loop"
+            class="animated-icon"
             style="width:250px;height:250px">
         </lord-icon>
         <h1>Animated Header</h1>
     </header>
     <a href="https://lordicon.com/">Icons by Lordicon.com</a>
     <button onclick="location.href='../index.html'">Back to Home</button>
+
+    <script>
+        const animatedIcon = document.querySelector('.animated-icon');
+
+        animatedIcon.addEventListener('mouseenter', function() {
+            this.setAttribute('trigger', 'loop');
+        });
+
+        animatedIcon.addEventListener('mouseleave', function() {
+            this.removeAttribute('trigger');
+        });
+    </script>
 </body>
 </html>
