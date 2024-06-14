@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Gallery</title>
-    <link rel="stylesheet" href="..style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <!-- Include Lordicon script -->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <style>
@@ -39,6 +39,11 @@
             width: 100px; /* Adjusted icon size */
             height: 100px; /* Adjusted icon size */
             margin-right: 20px; /* Space between icon and heading */
+            transition: transform 0.3s ease-in-out; /* Added transition for smooth animation */
+        }
+
+        .lord-icon:hover {
+            transform: scale(1.2); /* Example of scaling animation on hover */
         }
 
         .menu-button {
@@ -81,7 +86,9 @@
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
                 class="lord-icon"
-                style="width:100px;height:100px">
+                style="width:100px;height:100px"
+                trigger="hover" <!-- Added trigger attribute for hover animation -->
+                >
             </lord-icon>
             <h1>Header 1</h1>
         </div>
@@ -94,7 +101,9 @@
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
                 class="lord-icon"
-                style="width:100px;height:100px">
+                style="width:100px;height:100px"
+                trigger="hover" <!-- Added trigger attribute for hover animation -->
+                >
             </lord-icon>
             <h1>Header 2</h1>
         </div>
@@ -105,10 +114,5 @@
 
     <a href="https://lordicon.com/">Icons by Lordicon.com</a>
     <button onclick="location.href='../index.html'">Back to Home</button>
-
-    <script>
-        // JavaScript for hover animation if needed
-        // Replace with your specific animation handling if required
-    </script>
 </body>
 </html>
