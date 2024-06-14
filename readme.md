@@ -60,8 +60,8 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
+- A website where there are elements that are both static and animated
+- To
 - What are key components
 - What technology used and how it is used
 

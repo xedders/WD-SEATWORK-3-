@@ -51,3 +51,13 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Additional Styles for Gallery Pages */
+/* Customize header and footer designs for each gallery page */
+.header1 {
+    background-color: #007bff;
+}
+
+.footer1 {
+    background-color: #007bff;
+}
