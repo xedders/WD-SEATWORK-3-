@@ -8,48 +8,37 @@
     <!-- Include Lordicon script -->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
         /* Styling for header sections */
         .header-section {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            flex-direction: column;
-            height: 100vh;
+            height: 80vh; /* Adjusted height */
             background-color: #f0f0f0; /* Adjust background color */
             padding: 20px;
             text-align: center;
         }
 
         .header-section h1 {
-            margin-bottom: 20px;
+            margin: 0;
+            font-size: 24px; /* Adjusted font size */
         }
 
-        .header-section .lord-icon {
-            width: 250px;
-            height: 250px;
-            margin-bottom: 20px;
-        }
-
-        .navigation-buttons {
+        .lord-icon-container {
             display: flex;
-            justify-content: space-around;
-            width: 100%;
-            max-width: 400px; /* Adjust as needed */
-            margin-top: 20px;
+            align-items: center;
         }
 
-        .navigation-buttons a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff; /* Adjust button background color */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .navigation-buttons a:hover {
-            background-color: #0056b3; /* Adjust hover background color */
+        .lord-icon {
+            width: 100px; /* Adjusted icon size */
+            height: 100px; /* Adjusted icon size */
+            margin-right: 20px; /* Space between icon and heading */
         }
 
         .menu-button {
@@ -88,32 +77,26 @@
 <body>
     <!-- Header Section 1 -->
     <header class="header-section" style="background-color: #62c4dc;">
-        <lord-icon
-            src="https://cdn.lordicon.com/ubkgpbpt.json"
-            class="lord-icon"
-            style="width:250px;height:250px">
-        </lord-icon>
-        <h1>Header 1</h1>
-        <div class="navigation-buttons">
-            <a href="#">About</a>
-            <a href="#">Search</a>
-            <a href="#">Menu</a>
+        <div class="lord-icon-container">
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                class="lord-icon"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <h1>Header 1</h1>
         </div>
         <button class="menu-button" role="button">Menu</button>
     </header>
 
     <!-- Header Section 2 -->
     <header class="header-section" style="background-color: #ffa07a;">
-        <lord-icon
-            src="https://cdn.lordicon.com/ubkgpbpt.json"
-            class="lord-icon"
-            style="width:250px;height:250px">
-        </lord-icon>
-        <h1>Header 2</h1>
-        <div class="navigation-buttons">
-            <a href="#">About</a>
-            <a href="#">Search</a>
-            <a href="#">Menu</a>
+        <div class="lord-icon-container">
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                class="lord-icon"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <h1>Header 2</h1>
         </div>
         <button class="menu-button" role="button">Menu</button>
     </header>
