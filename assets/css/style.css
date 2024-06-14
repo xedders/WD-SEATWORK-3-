@@ -7,45 +7,27 @@
 
 /* Body Styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f0f0;
-    color: #000;
+    font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
-header {
+/* Static Header Styles */
+.classic-header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
-header h1 {
+.classic-header h1 {
     font-size: 2.5em;
 }
 
-header h2 {
+.classic-header h2 {
     font-size: 1.5em;
 }
 
-header p {
-    font-size: 1em;
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ddd;
-}
-
-/* Footer Styles */
-footer {
+/* Static Footer Styles */
+.classic-footer {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -54,10 +36,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-footer p {
-    margin: 0;
-}
-
-/* Additional Styles for Gallery Pages */
-/* Customize header and footer designs for each gallery page */
