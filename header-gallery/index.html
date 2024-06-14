@@ -19,26 +19,31 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 80vh; /* Adjusted height */
-            background-color: #f0f0f0; /* Adjust background color */
-            padding: 20px;
+            height: 50vh; /* Adjusted height */
+            padding: 10px;
             text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .header-section h1 {
             margin: 0;
             font-size: 24px; /* Adjusted font size */
+            color: #fff; /* Adjusted font color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
         }
 
         .lord-icon-container {
             display: flex;
             align-items: center;
+            margin-left: 10px; /* Added margin to the left of the icon */
         }
 
         .lord-icon {
             width: 100px; /* Adjusted icon size */
             height: 100px; /* Adjusted icon size */
-            margin-right: 20px; /* Space between icon and heading */
+            margin-right: 10px; /* Space between icon and heading */
             transition: transform 0.3s ease-in-out; /* Added transition for smooth animation */
         }
 
@@ -81,7 +86,7 @@
 </head>
 <body>
     <!-- Header Section 1 -->
-    <header class="header-section" style="background-color: #62c4dc;">
+    <header class="header-section" style="background-image: url('path/to/background1.jpg');">
         <div class="lord-icon-container">
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
@@ -96,7 +101,7 @@
     </header>
 
     <!-- Header Section 2 -->
-    <header class="header-section" style="background-color: #ffa07a;">
+    <header class="header-section" style="background-image: url('path/to/background2.jpg');">
         <div class="lord-icon-container">
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
