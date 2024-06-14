@@ -102,3 +102,34 @@ body {
     border-radius: 5px;
     text-decoration: none;
 }
+/* Additional CSS for Animated Headers */
+.animated-header lord-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.animated-header:hover lord-icon {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Button Styles (already defined in previous CSS) */
+button {
+    background-color: #ff4757;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e63c4d;
+}
+
+button:focus {
+    outline: none;
+}
