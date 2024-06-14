@@ -25,6 +25,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            position: relative; /* Added position relative */
         }
 
         .header-section h1 {
@@ -32,12 +33,14 @@
             font-size: 24px; /* Adjusted font size */
             color: #fff; /* Adjusted font color */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
+            z-index: 1; /* Ensure text is above the background */
         }
 
         .lord-icon-container {
             display: flex;
             align-items: center;
             margin-left: 10px; /* Added margin to the left of the icon */
+            z-index: 1; /* Ensure icon is above the background */
         }
 
         .lord-icon {
@@ -45,6 +48,7 @@
             height: 100px; /* Adjusted icon size */
             margin-right: 10px; /* Space between icon and heading */
             transition: transform 0.3s ease-in-out; /* Added transition for smooth animation */
+            z-index: 1; /* Ensure icon is above the background */
         }
 
         .lord-icon:hover {
@@ -69,6 +73,10 @@
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
+            z-index: 1; /* Ensure button is above the background */
+            position: absolute; /* Position button absolutely */
+            right: 10px; /* Align button to the right */
+            bottom: 10px; /* Align button to the bottom */
         }
 
         .menu-button:hover,
