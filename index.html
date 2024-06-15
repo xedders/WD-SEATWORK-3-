@@ -3,76 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery for JavaScript functionality -->
+    <script src="script.js"></script> <!-- Your custom JavaScript file -->
     <style>
         /* General styles */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            font: 1em/1.5 "Lato", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
         }
 
-        /* Styling for header and footer buttons */
-        .gallery-button {
-            background-color: #fff;
-            border: 0 solid #e2e8f0;
-            border-radius: 1.5rem;
-            box-sizing: border-box;
-            color: #0d172a;
-            cursor: pointer;
-            display: inline-block;
-            font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-            font-size: 1.1rem;
-            font-weight: 600;
-            line-height: 1;
-            padding: 1rem 1.6rem;
+        header {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: url('https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46') center no-repeat;
+            background-size: cover;
+        }
+
+        header .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
-            text-decoration: none #0d172a solid;
-            text-decoration-thickness: auto;
-            transition: all .1s cubic-bezier(.4, 0, .2, 1);
-            box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
+            color: #fff;
+            z-index: 2;
         }
 
-        .gallery-button:hover {
-            background-color: #1e293b;
+        header h1, header i {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        header i {
+            display: block;
+            font-style: italic;
+            margin-top: -0.5em;
+        }
+
+        header hgroup {
+            border: 5px solid #fff;
+            padding: 0.5em 3em;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: #333 center no-repeat;
+            background-size: cover;
+            z-index: 0;
+            opacity: 0;
+            filter: blur(4px);
+        }
+
+        .site {
+            padding: 20em 0;
+            text-align: center;
+            background-color: #efefef;
+            font-size: 0.8em;
+            color: #444;
+            position: relative;
+        }
+
+        .site a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .site a:hover {
+            color: #222;
+        }
+
+        .site nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #222;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .site nav a {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 1.3em;
             color: #fff;
         }
 
-        @media (min-width: 768px) {
-            .gallery-button {
-                font-size: 1.125rem;
-                padding: 1rem 2rem;
-            }
+        .site nav a:hover {
+            background: #333;
+        }
+
+        blockquote {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-left: 5px solid #0077b3; /* Adjusted border color */
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left;
+            position: relative;
+        }
+
+        blockquote img {
+            float: left;
+            margin-right: 20px;
+            max-width: 100px; /* Adjusted max-width */
+            border-radius: 50%; /* Rounded image */
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header style="background-image: linear-gradient(to bottom right, #b3e0ff, #0077b3);">
-        <h1>Welcome to Your Website</h1>
-        <p>This is the homepage of your website.</p>
-        <a href="header-gallery/index.html" class="gallery-button">View Header Gallery</a>
-        <a href="footer-gallery/index.html" class="gallery-button">View Footer Gallery</a>
-    </header>
+<header>
+    <div class="content">
+        <hgroup>
+            <h1>LOGO</h1>
+            <i>Slogan</i>
+        </hgroup>
+    </div>
+    <div class="overlay"></div>
+</header>
 
-    <!-- Footer Section -->
-    <footer style="background-image: linear-gradient(to bottom right, #b3e0ff, #0077b3);">
-        <div class="footer-section">
-            <h2>Footer Section</h2>
-            <a href="header-gallery/index.html" class="gallery-button">View Header Gallery</a>
-        </div>
-        <div class="footer-section">
-            <h2>Another Footer Section</h2>
-            <a href="footer-gallery/index.html" class="gallery-button">View Footer Gallery</a>
-        </div>
-    </footer>
-
-    <!-- Additional Links and Scripts -->
-    <a href="https://lordicon.com/" class="lordicon-link">Icons by Lordicon.com</a>
+<section class="site">
+    <nav>
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+        <a href="#">Page 3</a>
+        <a href="#">Page 4</a>
+        <a href="#">Page 5</a>
+    </nav>
+    <blockquote>
+        <img src="http://d.gr-assets.com/authors/1397426898p5/203714.jpg" alt="Henry Ford Image">
+        “I invented nothing new. I simply assembled the discoveries of other men behind whom were centuries of work. Had I worked fifty or ten or even five years before, I would have failed. So it is with every new thing. Progress happens when all the factors that make for it are ready, and then it is inevitable. To teach that a comparatively few men are responsible for the greatest forward steps of mankind is the worst sort of nonsense.”<br><br>
+        <strong>― Henry Ford</strong>
+    </blockquote>
+</section>
 
 </body>
 </html>
