@@ -111,4 +111,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Lordicon | Icons with animation | [trykolang.com](https://lordicon.com/icons) |
+| Lordicon | Icons with animation | (https://lordicon.com/icons) |
