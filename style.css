@@ -9,49 +9,100 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
 }
 
 /* Header Styles */
 .main-header {
-    background: linear-gradient(to right, #0062ff, #00c6ff);
-    color: #fff;
-    padding: 20px 0;
-    position: relative;
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #f8f9fa;
 }
 
-.header-content {
-    display: flex;
+.header1 {
+    background-color: #f8f9fa;
+}
+
+.header2 {
+    background-color: #e9ecef;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
+.header3 {
+    background-color: #dee2e6;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo .logo-text {
-    color: #fff;
+.header4 {
+    background-color: #ced4da;
 }
 
-.auth-links a {
-    color: #fff;
-    margin-left: 15px;
+.header5 {
+    background-color: #adb5bd;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 10px 0;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjusted gap for spacing */
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+.icon-container img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Lordicon Link */
+.lordicon-link {
+    margin-top: 20px;
     text-decoration: none;
+    color: #0073e6;
 }
 
-.auth-links .signup {
-    background-color: #ff4757;
-    padding: 8px 16px;
+/* Button Styles */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: white;
+    border: none;
     border-radius: 5px;
-    color: #fff;
 }
 
+button:hover {
+    background-color: #ffffff;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Hero Section */
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -102,7 +153,18 @@ body {
     border-radius: 5px;
     text-decoration: none;
 }
-/* Additional CSS for Animated Headers */
+
+/* Text Container */
+.text-container {
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.text-container p {
+    margin: 5px 0;
+}
+
+/* Animated Header */
 .animated-header lord-icon {
     position: absolute;
     top: 50%;
@@ -113,262 +175,4 @@ body {
 
 .animated-header:hover lord-icon {
     transform: translate(-50%, -50%) scale(1.2);
-}
-
-/* Button Styles (already defined in previous CSS) */
-button {
-    background-color: #ff4757;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #e63c4d;
-}
-
-button:focus {
-    outline: none;
-}
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
-}
-
-.main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 800px;
-}
-
-.main-header h1 {
-    margin: 10px 0;
-}
-
-.icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Adjust this value for more or less spacing */
-}
-
-.lordicon-link {
-    margin-top: 20px;
-    text-decoration: none;
-    color: #0073e6;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #ffffff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #ffffff;
-}
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
-}
-
-.main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 800px;
-}
-
-.header1 {
-    background-color: #f8f9fa;
-}
-
-.header2 {
-    background-color: #e9ecef;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header3 {
-    background-color: #dee2e6;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header4 {
-    background-color: #ced4da;
-}
-
-.header5 {
-    background-color: #adb5bd;
-    text-align: center;
-}
-
-.main-header h1 {
-    margin: 10px 0;
-}
-
-.icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.icon-container img {
-    width: 100px;
-    height: 100px;
-}
-
-.lordicon-link {
-    margin-top: 20px;
-    text-decoration: none;
-    color: #0073e6;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #005bb5;
-}
-
-.text-container {
-    max-width: 400px;
-    margin: 0 20px;
-}
-
-.text-container p {
-    margin: 5px 0;
-}
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
-}
-
-.main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 800px;
-    background-color: #f8f9fa;
-}
-
-.header2 {
-    background-color: #e9ecef;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header3 {
-    background-color: #dee2e6;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header4 {
-    background-color: #ced4da;
-}
-
-.header5 {
-    background-color: #adb5bd;
-    text-align: center;
-}
-
-.main-header h1 {
-    margin: 10px 0;
-}
-
-.icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Adjusted gap for spacing */
-    margin-top: 10px; /* Added margin for spacing */
-}
-
-.icon-container img {
-    width: 100px;
-    height: 100px;
-}
-
-.lordicon-link {
-    margin-top: 20px;
-    text-decoration: none;
-    color: #0073e6;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #005bb5;
-}
-
-.text-container {
-    max-width: 400px;
-    margin: 0 20px;
-}
-
-.text-container p {
-    margin: 5px 0;
 }
