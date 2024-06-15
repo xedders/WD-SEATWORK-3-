@@ -52,6 +52,29 @@
             padding: 20px;
         }
 
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button-75 {
+            background-color: #1e90ff; /* Adjusted blue gradient */
+            color: #fff;
+            border: none;
+            border-radius: 1.5rem;
+            padding: 1rem 2rem;
+            margin: 0 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button-75:hover {
+            background-color: #0073e6; /* Darker blue on hover */
+        }
+
         /* Animation */
 
         .parallax > use {
@@ -144,12 +167,28 @@
     </div>
     <!-- Waves end -->
 
+    <!-- Button Container -->
+    <div class="button-container">
+        <button class="button-75" onclick="openGallery('header')">Header Gallery</button>
+        <button class="button-75" onclick="openGallery('footer')">Footer Gallery</button>
+    </div>
+
 </header>
 
 <!-- Content Section -->
 <div class="content flex">
-    <p>By.Goodkatz | Free to use</p>
 </div>
+
+<!-- JavaScript for Gallery Navigation -->
+<script>
+    function openGallery(section) {
+        if (section === 'header') {
+            window.location.href = 'header-gallery.html'; // Link to header gallery page
+        } else if (section === 'footer') {
+            window.location.href = 'footer-gallery.html'; // Link to footer gallery page
+        }
+    }
+</script>
 
 </body>
 </html>
