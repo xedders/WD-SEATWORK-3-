@@ -9,7 +9,7 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">SEATWORK-3</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
@@ -57,7 +57,7 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+We are to create a website with 5 different headers and footers with static designs and another 5 for animated designs.
 
 Guiding Question:
 - A website where there are elements that are both static and animated
@@ -111,4 +111,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Lordicon | Icons with animation | [trykolang.com](https://lordicon.com/icons) |
