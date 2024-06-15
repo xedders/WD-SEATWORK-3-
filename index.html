@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <style>
-        /* Add the provided button CSS here */
+        /* Global CSS styles */
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        /* Header Section */
+        .header {
+            position: relative;
+            text-align: center;
+            background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+            color: white;
+            padding: 20px 0;
+            overflow: hidden; /* Ensure overflow is hidden to contain waves */
+        }
+        
+        .logo {
+            width: 50px;
+            fill: white;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        
+        .inner-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+        
+        /* Waves Container */
+        .waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 15vh;
+            min-height: 100px;
+            max-height: 150px;
+        }
+        
+        /* Content Section */
+        .content {
+            background-color: #f0f0f0;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        /* Button Section */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
         .button-75 {
             align-items: center;
             background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
@@ -33,31 +91,45 @@
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
+            margin: 10px;
         }
-
+        
         .button-75:active {
             outline: 0;
         }
-
+        
         .button-75:hover {
             outline: 0;
         }
-
+        
         .button-75 span {
             transition: all 200ms;
         }
-
+        
         .button-75:hover span {
             transform: scale(.9);
             opacity: .75;
         }
-
-        @media screen and (max-width: 991px) {
+        
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+        
+            .waves {
+                height: 40px;
+                min-height: 40px;
+            }
+        
+            .content {
+                padding: 10px 0;
+            }
+        
             .button-75 {
                 font-size: 15px;
                 height: 50px;
             }
-
+        
             .button-75 span {
                 line-height: 50px;
             }
@@ -68,7 +140,7 @@
 
 <!-- Header Section -->
 <header class="header">
-    <div class="inner-header flex">
+    <div class="inner-header">
         <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
             <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
@@ -83,12 +155,34 @@
         </svg>
         <h1>Simple CSS Waves</h1>
     </div>
+    <!-- Waves Container -->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave"
+                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+    <!-- Waves end -->
 </header>
+
+<!-- Content Section -->
+<div class="content flex">
+    <p>By.Goodkatz | Free to use</p>
+</div>
 
 <!-- Button Section -->
 <div class="button-container">
-    <button class="button-75" onclick="openGallery('header')"><span class="text">Header Gallery</span></button>
-    <button class="button-75" onclick="openGallery('footer')"><span class="text">Footer Gallery</span></button>
+    <button class="button-75" onclick="openGallery('header')">Header Gallery</button>
+    <button class="button-75" onclick="openGallery('footer')">Footer Gallery</button>
 </div>
 
 <!-- Footer Section -->
