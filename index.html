@@ -5,9 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
-    <!-- Any additional styles or scripts can be linked here -->
+    <!-- Include Lordicon script -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #b3e0ff, #0077b3); /* Background gradient */
+        }
+
+        /* Styling for header sections */
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50vh; /* Adjusted height */
+            padding: 10px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative; /* Added position relative */
+            color: #fff; /* Font color */
+        }
+
+        .header-section h1 {
+            margin: 0;
+            font-size: 24px; /* Adjusted font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
+            z-index: 1; /* Ensure text is above the background */
+        }
+
+        .lord-icon-container {
+            display: flex;
+            align-items: center;
+            margin-left: 10px; /* Added margin to the left of the icon */
+            z-index: 1; /* Ensure icon is above the background */
+        }
+
+        .lord-icon {
+            width: 100px; /* Adjusted icon size */
+            height: 100px; /* Adjusted icon size */
+            margin-right: 10px; /* Space between icon and heading */
+            transition: transform 0.3s ease-in-out; /* Added transition for smooth animation */
+            z-index: 1; /* Ensure icon is above the background */
+        }
+
+        .lord-icon:hover {
+            transform: scale(1.2); /* Example of scaling animation on hover */
+        }
+
+        .menu-button {
+            --b: 3px;   /* border thickness */
+            --s: .45em; /* size of the corner */
+            --color: #373B44;
+            padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+            color: var(--color);
+            --_p: var(--s);
+            background:
+                conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+                var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+            transition: .3s linear, color 0s, background-color 0s;
+            outline: var(--b) solid #0000;
+            outline-offset: .6em;
+            font-size: 16px;
+            border: 0;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            z-index: 1; /* Ensure button is above the background */
+            position: absolute; /* Position button absolutely */
+            right: 10px; /* Align button to the right */
+            bottom: 10px; /* Align button to the bottom */
+            font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-weight: 600;
+            line-height: 1;
+            text-align: center;
+            text-decoration: none #0d172a solid;
+            text-decoration-thickness: auto;
+            box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+        }
+
+        .menu-button:hover,
+        .menu-button:focus-visible {
+            --_p: 0px;
+            outline-color: var(--color);
+            outline-offset: .05em;
+        }
+
+        .menu-button:active {
+            background: var(--color);
+            color: #fff;
+        }
+
+        .lordicon-link {
+            position: absolute; /* Position link absolutely */
+            bottom: 10px; /* Adjust position from the bottom */
+            left: 10px; /* Adjust position from the left */
+            color: #fff; /* Font color */
+            text-decoration: none; /* Remove underline */
+            z-index: 1; /* Ensure link is above the background */
+        }
+
+        .lordicon-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 1; /* Ensure footer is above the background */
+        }
+
+        .footer-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 20vh; /* Adjusted height */
+            padding: 10px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative; /* Added position relative */
+            color: #fff; /* Font color */
+            margin-top: 20px;
+        }
+
+        .footer-section h1 {
+            margin: 0;
+            font-size: 24px; /* Adjusted font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
+            z-index: 1; /* Ensure text is above the background */
+        }
+
+        .button-81 {
+            background-color: #fff;
+            border: 0 solid #e2e8f0;
+            border-radius: 1.5rem;
+            box-sizing: border-box;
+            color: #0d172a;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1;
+            padding: 1rem 1.6rem;
+            text-align: center;
+            text-decoration: none #0d172a solid;
+            text-decoration-thickness: auto;
+            transition: all .1s cubic-bezier(.4, 0, .2, 1);
+            box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-81:hover {
+            background-color: #1e293b;
+            color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            .button-81 {
+                font-size: 1.125rem;
+                padding: 1rem 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
             <ul>
@@ -19,10 +195,19 @@
         </nav>
     </header>
 
+    <!-- Main Content Sections -->
     <section id="home">
-        <div class="header">
-            <h1>Welcome to Your Website</h1>
-            <p>This is the main header section.</p>
+        <div class="header-section" style="background-image: linear-gradient(to bottom right, #b3e0ff, #0077b3);">
+            <div class="lord-icon-container">
+                <lord-icon
+                    src="https://cdn.lordicon.com/ubkgpbpt.json"
+                    class="lord-icon"
+                    style="width:100px;height:100px"
+                    trigger="hover">
+                </lord-icon>
+                <h1>Header 1</h1>
+            </div>
+            <button class="menu-button" role="button">Menu</button>
         </div>
     </section>
 
@@ -47,8 +232,39 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <div class="footer-section" style="background-image: linear-gradient(to bottom right, #b3e0ff, #0077b3);">
+            <div class="lord-icon-container">
+                <lord-icon
+                    src="https://cdn.lordicon.com/ubkgpbpt.json"
+                    class="lord-icon"
+                    style="width:100px;height:100px"
+                    trigger="hover">
+                </lord-icon>
+                <h1>Footer 1</h1>
+            </div>
+            <button class="button-81" role="button">Button 81</button>
+        </div>
+        <div class="footer-section" style="background-image: linear-gradient(to bottom right, #b3e0ff, #0077b3);">
+            <div class="lord-icon-container">
+                <lord-icon
+                    src="https://cdn.lordicon.com/ubkgpbpt.json"
+                    class="lord-icon"
+                    style="width:100px;height:100px"
+                    trigger="hover">
+                </lord-icon>
+                <h1>Footer 2</h1>
+            </div>
+            <button class="button-81" role="button">Button 81</button>
+        </div>
     </footer>
+
+    <!-- Additional Links and Buttons -->
+    <a href="https://lordicon.com/" class="lordicon-link">Icons by Lordicon.com</a>
+
+    <!-- Additional scripts or other resources can be added here -->
+
 </body>
 </html>
+
