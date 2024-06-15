@@ -177,14 +177,14 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #0073e6;
+    background-color: #ffffff;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: #005bb5;
+    background-color: #ffffff;
 }
 body {
     font-family: Arial, sans-serif;
@@ -244,6 +244,98 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+}
+
+.icon-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.lordicon-link {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0073e6;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.text-container {
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.text-container p {
+    margin: 5px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #f8f9fa;
+}
+
+.header2 {
+    background-color: #e9ecef;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header3 {
+    background-color: #dee2e6;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header4 {
+    background-color: #ced4da;
+}
+
+.header5 {
+    background-color: #adb5bd;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 10px 0;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjusted gap for spacing */
+    margin-top: 10px; /* Added margin for spacing */
 }
 
 .icon-container img {
