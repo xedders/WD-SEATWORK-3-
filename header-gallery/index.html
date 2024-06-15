@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Gallery</title>
-    <link rel="stylesheet" href="..style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <!-- Include Lordicon script -->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <style>
@@ -90,18 +90,47 @@
             background: var(--color);
             color: #fff;
         }
+
+        .lordicon-link {
+            position: absolute; /* Position link absolutely */
+            bottom: 10px; /* Adjust position from the bottom */
+            left: 10px; /* Adjust position from the left */
+            color: #fff; /* Font color */
+            text-decoration: none; /* Remove underline */
+            z-index: 1; /* Ensure link is above the background */
+        }
+
+        .lordicon-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .back-button {
+            position: absolute; /* Position button absolutely */
+            bottom: 10px; /* Adjust position from the bottom */
+            right: 10px; /* Adjust position from the right */
+            padding: 10px 20px; /* Padding for button */
+            font-size: 16px; /* Font size */
+            background-color: #373B44; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none; /* Remove border */
+            cursor: pointer; /* Cursor style */
+            z-index: 1; /* Ensure button is above the background */
+        }
+
+        .back-button:hover {
+            background-color: #000; /* Darken background on hover */
+        }
     </style>
 </head>
 <body>
     <!-- Header Section 1 -->
-    <header class="header-section" style="background-image: url('../images/background1.jpg');">
+    <header class="header-section" style="background-image: url('images/background1.jpg');">
         <div class="lord-icon-container">
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
                 class="lord-icon"
                 style="width:100px;height:100px"
-                trigger="hover" <!-- Added trigger attribute for hover animation -->
-                >
+                trigger="hover">
             </lord-icon>
             <h1>Header 1</h1>
         </div>
@@ -109,241 +138,92 @@
     </header>
 
     <!-- Header Section 2 -->
-    <header class="header-section" style="background-image: url('../images/background2.jpg');">
+    <header class="header-section" style="background-image: url('images/background2.jpg');">
         <div class="lord-icon-container">
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
                 class="lord-icon"
                 style="width:100px;height:100px"
-                trigger="hover" <!-- Added trigger attribute for hover animation -->
-                >
+                trigger="hover">
             </lord-icon>
             <h1>Header 2</h1>
         </div>
         <button class="menu-button" role="button">Menu</button>
     </header>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Animated Header Gallery</title>
-        <link rel="stylesheet" href="../style.css">
-        <script src="https://cdn.lordicon.com/lusqsztk.js"></script> <!-- Make sure this script is correctly loaded -->
-    </head>
-    <body>
-        <header class="main-header animated-header header1">
-            <div class="icon-container">
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-            </div>
-            <h1>Animated Header 1</h1>
-        </header>
-        
-        <header class="main-header animated-header header2">
-            <div class="icon-container">
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-            </div>
-            <h1>Animated Header 2</h1>
-        </header>
-    
-        <header class="main-header animated-header header3">
-            <div class="icon-container">
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-            </div>
-            <h1>Animated Header 3</h1>
-        </header>
-    
-        <header class="main-header animated-header header4">
-            <div class="icon-container">
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-            </div>
-            <h1>Animated Header 4</h1>
-        </header>
-    
-        <header class="main-header animated-header header5">
-            <div class="icon-container">
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-                <lord-icon
-                    src="https://cdn.lordicon.com/ubkgpbpt.json"
-                    trigger="hover"
-                    style="width:100px;height:100px">
-                </lord-icon>
-            </div>
-            <h1>Animated Header 5</h1>
-        </header>
-        
-        <a href="https://lordicon.com/" class="lordicon-link">Icons by Lordicon.com</a>
-        <button onclick="location.href='../index.html'">Back to Home</button>
-    </body>
-    </html>
-    
+
+    <!-- Animated Header Gallery Section -->
+    <header class="main-header animated-header header1">
+        <div class="icon-container">
+            <!-- Example of multiple Lordicons -->
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="hover"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="hover"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="hover"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="hover"
+                style="width:100px;height:100px">
+            </lord-icon>
+        </div>
+        <h1>Animated Header 1</h1>
+    </header>
+
+    <header class="main-header animated-header header2">
+        <div class="icon-container">
+            <!-- Example of multiple Lordicons -->
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="hover"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="hover"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+               
