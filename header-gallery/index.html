@@ -123,7 +123,7 @@
     </style>
 </head>
 <body>
-    <!-- Header Section 1 -->
+    <!-- Static Header Sections -->
     <header class="header-section" style="background-image: url('images/background1.jpg');">
         <div class="lord-icon-container">
             <lord-icon
@@ -137,7 +137,6 @@
         <button class="menu-button" role="button">Menu</button>
     </header>
 
-    <!-- Header Section 2 -->
     <header class="header-section" style="background-image: url('images/background2.jpg');">
         <div class="lord-icon-container">
             <lord-icon
@@ -151,27 +150,13 @@
         <button class="menu-button" role="button">Menu</button>
     </header>
 
-    <!-- Animated Header Gallery Section -->
+    <!-- Animated Header Sections -->
     <header class="main-header animated-header header1">
         <div class="icon-container">
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
-                style="width:100px;height:100px">
-            </lord-icon>
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                style="width:100px;height:100px">
-            </lord-icon>
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                style="width:100px;height:100px">
-            </lord-icon>
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                style="width:100px;height:100px">
-            </lord-icon>
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="loop"
+                colors="primary:#121331,secondary:#08a88a"
                 style="width:100px;height:100px">
             </lord-icon>
         </div>
@@ -183,26 +168,7 @@
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
                 trigger="hover"
-                style="width:100px;height:100px">
-            </lord-icon>
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                trigger="hover"
-                style="width:100px;height:100px">
-            </lord-icon>
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                trigger="hover"
-                style="width:100px;height:100px">
-            </lord-icon>
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                trigger="hover"
-                style="width:100px;height:100px">
-            </lord-icon>
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                trigger="hover"
+                colors="primary:#f0f0f0,secondary:#ff9900"
                 style="width:100px;height:100px">
             </lord-icon>
         </div>
@@ -214,15 +180,40 @@
         <div class="icon-container">
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
+                colors="primary:#4e4e50,secondary:#fefefe"
                 style="width:100px;height:100px">
             </lord-icon>
+        </div>
+        <h1>Static Header 3</h1>
+    </header>
+
+    <!-- Animated Header Gallery Section -->
+    <header class="main-header animated-header header4">
+        <div class="icon-container">
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#000000"
                 style="width:100px;height:100px">
             </lord-icon>
+        </div>
+        <h1>Animated Header 4</h1>
+    </header>
+
+    <header class="main-header animated-header header5">
+        <div class="icon-container">
             <lord-icon
                 src="https://cdn.lordicon.com/ubkgpbpt.json"
+                trigger="loop"
+                colors="primary:#000000,secondary:#ffffff"
                 style="width:100px;height:100px">
             </lord-icon>
-            <lord-icon
-                src="https://cdn.lord
+        </div>
+        <h1>Animated Header 5</h1>
+    </header>
+
+    <!-- Additional Links and Buttons -->
+    <a href="https://lordicon.com/" class="lordicon-link">Icons by Lordicon.com</a>
+    <button class="back-button" onclick="location.href='../index.html'">Back to Home</button>
+</body>
+</html>
