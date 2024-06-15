@@ -19,50 +19,81 @@ body {
 }
 
 /* Header Styles */
-header {
+.header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
     height: 100vh;
+}
+
+.header .inner-header {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header .waves {
     position: relative;
-    overflow: hidden;
-    background: url('https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46') center no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px; /* Fix for safari gap */
+    min-height: 100px;
+    max-height: 150px;
 }
 
-header .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.header .content {
+    position: relative;
+    height: 20vh;
     text-align: center;
-    color: #fff;
-    z-index: 2;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    text-transform: uppercase;
+/* Waves Animation */
+.header .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
 }
 
-header i {
-    display: block;
-    font-style: italic;
-    margin-top: -0.5em;
+.header .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
 }
 
-header hgroup {
-    border: 5px solid #fff;
-    padding: 0.5em 3em;
-    background-color: rgba(0, 0, 0, 0.2);
+.header .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
 }
 
-header .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 0;
+.header .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.header .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
 }
 
 /* Site Section */
