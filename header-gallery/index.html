@@ -12,6 +12,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Set a light background color */
         }
 
         /* Styling for header sections */
@@ -27,6 +28,8 @@
             background-repeat: no-repeat;
             position: relative; /* Added position relative */
             color: #fff; /* Font color */
+            overflow: hidden; /* Ensure content stays within header */
+            border-bottom: 2px solid #ccc; /* Add a border at the bottom */
         }
 
         .header-section h1 {
@@ -150,70 +153,73 @@
         <button class="menu-button" role="button">Menu</button>
     </header>
 
+    <header class="header-section" style="background-image: url('images/background3.jpg');">
+        <div class="lord-icon-container">
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                class="lord-icon"
+                style="width:100px;height:100px"
+                trigger="hover">
+            </lord-icon>
+            <h1>Header 3</h1>
+        </div>
+        <button class="menu-button" role="button">Menu</button>
+    </header>
+
+    <header class="header-section" style="background-image: url('images/background4.jpg');">
+        <div class="lord-icon-container">
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                class="lord-icon"
+                style="width:100px;height:100px"
+                trigger="hover">
+            </lord-icon>
+            <h1>Header 4</h1>
+        </div>
+        <button class="menu-button" role="button">Menu</button>
+    </header>
+
+    <header class="header-section" style="background-image: url('images/background5.jpg');">
+        <div class="lord-icon-container">
+            <lord-icon
+                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                class="lord-icon"
+                style="width:100px;height:100px"
+                trigger="hover">
+            </lord-icon>
+            <h1>Header 5</h1>
+        </div>
+        <button class="menu-button" role="button">Menu</button>
+    </header>
+
     <!-- Animated Header Sections -->
-    <header class="main-header animated-header header1">
+    <header class="main-header animated-header header6" style="background-color: #3498db;">
         <div class="icon-container">
             <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                src="https://cdn.lordicon.com/zjhryiyb.json"
+                trigger="morph"
+                state="morph-glitter"
+                style="width:150px;height:150px">
+            </lord-icon>
+        </div>
+        <h1 style="color: #fff;">Animated Header 6</h1>
+    </header>
+
+    <header class="main-header animated-header header7" style="background-color: #2ecc71;">
+        <div class="icon-container">
+            <lord-icon
+                src="https://cdn.lordicon.com/zjhryiyb.json"
                 trigger="loop"
-                colors="primary:#121331,secondary:#08a88a"
-                style="width:100px;height:100px">
+                colors="primary:#ecf0f1,secondary:#e74c3c"
+                style="width:150px;height:150px">
             </lord-icon>
         </div>
-        <h1>Animated Header 1</h1>
+        <h1 style="color: #fff;">Animated Header 7</h1>
     </header>
 
-    <header class="main-header animated-header header2">
+    <header class="main-header animated-header header8" style="background-color: #f39c12;">
         <div class="icon-container">
             <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                trigger="hover"
-                colors="primary:#f0f0f0,secondary:#ff9900"
-                style="width:100px;height:100px">
-            </lord-icon>
-        </div>
-        <h1>Animated Header 2</h1>
-    </header>
-
-    <!-- Static Header Gallery Section -->
-    <header class="main-header static-header header3" style="background-image: url('images/background3.jpg');">
-        <div class="icon-container">
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                colors="primary:#4e4e50,secondary:#fefefe"
-                style="width:100px;height:100px">
-            </lord-icon>
-        </div>
-        <h1>Static Header 3</h1>
-    </header>
-
-    <!-- Animated Header Gallery Section -->
-    <header class="main-header animated-header header4">
-        <div class="icon-container">
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
-                trigger="hover"
-                colors="primary:#ffffff,secondary:#000000"
-                style="width:100px;height:100px">
-            </lord-icon>
-        </div>
-        <h1>Animated Header 4</h1>
-    </header>
-
-    <header class="main-header animated-header header5">
-        <div class="icon-container">
-            <lord-icon
-                src="https://cdn.lordicon.com/ubkgpbpt.json"
+                src="https://cdn.lordicon.com/zjhryiyb.json"
                 trigger="loop"
-                colors="primary:#000000,secondary:#ffffff"
-                style="width:100px;height:100px">
-            </lord-icon>
-        </div>
-        <h1>Animated Header 5</h1>
-    </header>
-
-    <!-- Additional Links and Buttons -->
-    <a href="https://lordicon.com/" class="lordicon-link">Icons by Lordicon.com</a>
-    <button class="back-button" onclick="location.href='../index.html'">Back to Home</button>
-</body>
-</html>
+                colors="primary:#ecf0f1,secondary:#e74c3c"
