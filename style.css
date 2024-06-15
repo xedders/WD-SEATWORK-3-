@@ -176,3 +176,130 @@ button:focus {
 .animated-header:hover lord-icon {
     transform: translate(-50%, -50%) scale(1.2);
 }
+/* General styles */
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font: 1em/1.5 "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+body {
+    font-size: 1.3em;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url('https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46') center no-repeat;
+    background-size: cover;
+}
+
+header .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+header h1, header i {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+header i {
+    display: block;
+    font-style: italic;
+    margin-top: -0.5em;
+}
+
+header hgroup {
+    border: 5px solid #fff;
+    padding: 0.5em 3em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #333 center no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.site {
+    padding: 20em 0;
+    text-align: center;
+    background-color: #efefef;
+    font-size: 0.8em;
+    color: #444;
+    position: relative;
+}
+
+.site a.button-81 {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.site a.button-81:hover {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .site a.button-81 {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+    }
+}
+
+blockquote {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-left: 5px solid #0077b3; /* Adjusted border color */
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left;
+    position: relative;
+}
+
+blockquote img {
+    float: left;
+    margin-right: 20px;
+    max-width: 100px; /* Adjusted max-width */
+    border-radius: 50%; /* Rounded image */
+}
